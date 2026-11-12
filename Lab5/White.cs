@@ -16,12 +16,14 @@ namespace Lab5
                 for(int a = 0; a < matrix.GetLength(1); a++)
                 {
                     if(matrix[i, a] > 0 ) 
+                    {
                         average += matrix[i, a];
                         d++;
+                    }
                 }
-                if(d > 0)
-                    average /= d;
             }
+            if(d > 0)
+                    average /= d;
 
             // end
 
