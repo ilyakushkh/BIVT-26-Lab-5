@@ -10,6 +10,18 @@ namespace Lab5
             double average = 0;
 
             // code here
+            int d = 0;
+            for(int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for(int a = 0; a < matrix.GetLength(1); a++)
+                {
+                    if(matrix[i, a] > 0 ) 
+                        average += matrix[i, a];
+                        d++;
+                }
+                if(d > 0)
+                    average /= d;
+            }
 
             // end
 
